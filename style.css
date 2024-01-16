@@ -129,6 +129,9 @@ ul {
   font-weight: 400;
   line-height: 26px;
 }
+.popular-travel img{
+  width: 80%;
+}
 
 
 /* customer destination section */
@@ -387,7 +390,7 @@ footer p {
     padding: 0 10px;
   }
 
-  /* po */
+  /* popular travel section */
   .popular-travel {
     flex-direction: column;
     gap: 24px;
@@ -450,4 +453,103 @@ footer p {
   footer p {
     font-size: 14px;
   }
+}
+
+/* responsive website by media query: table devices */
+@media screen and (min-width:600px) and (max-width:992px) {
+  .logo h1 {
+    font-size: 26px;
+    font-weight: 800;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .main-banner {
+    padding: 50px 100px;
+    background-size: auto auto;
+  }
+  .main-banner h1 {
+    font-size: 22px;
+  }
+  .main-banner p {
+    font-size: 14px;
+  }
+  .travel-requirements {
+    flex-direction: column;
+  }
+  .travel-requirements select,
+  input,
+  button {
+    width: auto;
+    box-sizing: border-box;
+  }
+  main {
+    padding: 0 10px;
+  }
+
+  /* popular travel section */
+  .popular-travel {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .popular-travel img {
+    width: 100%;
+  }
+  .popular-travel-text h1 {
+    font-size: 20px;
+  }
+  .popular-travel-text p,
+  ul {
+    font-size: 14px;
+  }
+  .destinations-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .destinations-gallery div img {
+    height: 286px;
+  }
+
+  /* Why Choose Us section */
+  .speciality-text {
+    width: 100%;
+  }
+  .special-facilities-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* news letter section */
+  .news-letter {
+    flex-direction: column;
+  }
+  .form {
+    width: 80%;
+  }
+  .news-letter img {
+    width: 100%;
+  }
+  .discount-card {
+    border-radius: 16px;
+    color: #fff;
+    line-height: 5px;
+    padding: 30px 16px;
+    max-width: 300px;
+  }
+  .discount-card h2 {
+    font-size: 15px;
+  }
+  .discount-card h1 {
+    font-size: 21px;
+  }
+  footer {
+    padding: 44px 76px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+
 }
