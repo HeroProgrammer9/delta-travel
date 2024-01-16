@@ -1,0 +1,62 @@
+/* common css style for site */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@100&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  max-width: 1170px;
+  margin: 20px auto;
+}
+/* primary color and button style */
+:root {
+  --primary: #ff5400;
+}
+.primary-button {
+  border-radius: 8px;
+  background: #ff5400;
+  padding: 16px 30px;
+}
+
+
+/* custom css styles started here */
+.logo {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.logo img {
+  height: 100%;
+}
+.logo h1 {
+  font-size: 36px;
+  font-weight: 800;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #424247;
+}
+.hamburger {
+  display: none;
+}
+
+/* responsive website by media query: mobile devices */
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
