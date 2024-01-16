@@ -57,6 +57,8 @@ nav ul li {
 .hamburger {
   display: none;
 }
+
+/* main banner for header section */
 .main-banner {
   margin: 17px auto;
   padding: 106px 200px;
@@ -102,6 +104,8 @@ button {
   outline: none;
   padding: 16px 15px;
 }
+
+/* body main section */
 main {
   padding: 0 15px;
 }
@@ -125,6 +129,9 @@ ul {
   font-weight: 400;
   line-height: 26px;
 }
+
+
+/* customer destination section */
 .destinations {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -193,6 +200,8 @@ ul {
   grid-column: 6 / span 7;
   grid-row: 3 / span 1;
 }
+
+/* why choose us section */
 .speciality-text {
   text-align: center;
   width: 50%;
@@ -213,7 +222,6 @@ ul {
 .special-facilities-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 24px;
 }
 .special-facilities {
@@ -247,6 +255,8 @@ ul {
   border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
 }
+
+/* news letter section */
 .news-letter {
   display: flex;
   align-items: center;
@@ -305,6 +315,8 @@ ul {
 .news-letter img {
   width: 100%;
 }
+
+/* footer section */
 footer {
   background-color: rgba(19, 19, 24, 0.05);
   padding: 110px 300px;
@@ -374,6 +386,8 @@ footer p {
   main {
     padding: 0 10px;
   }
+
+  /* po */
   .popular-travel {
     flex-direction: column;
     gap: 24px;
@@ -395,9 +409,17 @@ footer p {
   .destinations-gallery div img {
     height: 286px;
   }
+
+  /* Why Choose Us section */
   .speciality-text {
     width: 100%;
   }
+  .special-facilities-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* news letter section */
   .news-letter {
     flex-direction: column;
   }
