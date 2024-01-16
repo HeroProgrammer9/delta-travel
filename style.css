@@ -9,18 +9,22 @@ body {
   margin: 20px auto;
 }
 header {
-  padding: 0 5px;
+  padding: 0 15px;
 }
 /* primary color and button style */
 :root {
   --primary: #ff5400;
 }
 .primary-button {
+  color: #fff;
   border-radius: 8px;
   background: #ff5400;
   padding: 16px 30px;
+  border: none;
 }
-
+.primary-button:hover {
+  cursor: pointer;
+}
 
 /* custom css styles started here */
 .logo {
@@ -54,10 +58,56 @@ ul li {
   display: none;
 }
 
+.main-banner {
+  margin: 17px auto;
+  padding: 106px 200px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("Images/travel-banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-radius: 16px;
+  text-align: center;
+}
+.main-banner h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.main-banner p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.travel-requirements {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px 16px;
+}
+.travel-requirements select,
+input,
+button {
+  width: 174px;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 16px 15px;
+}
+
 /* responsive website by media query: mobile devices */
 @media screen and (max-width: 600px) {
   header {
-    padding: 0 2px;
+    padding: 0 10px;
   }
   .logo h1 {
     font-size: 26px;
@@ -68,5 +118,24 @@ ul li {
   }
   nav ul {
     display: none;
+  }
+  .main-banner {
+    padding: 32px 24px;
+    background-size: auto auto;
+  }
+  .main-banner h1 {
+    font-size: 22px;
+  }
+  .main-banner p {
+    font-size: 14px;
+  }
+  .travel-requirements {
+    flex-direction: column;
+  }
+  .travel-requirements select,
+  input,
+  button {
+    width: auto;
+    box-sizing: border-box;
   }
 }
