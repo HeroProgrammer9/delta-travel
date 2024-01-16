@@ -126,6 +126,77 @@ ul {
   font-weight: 400;
   line-height: 26px;
 }
+.destinations {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.destinations h1 {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.destinations p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.destinations-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+}
+.destinations-gallery img {
+  width: 100%;
+}
+
+.destinations-gallery div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.destinations-gallery div h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.image-box1 {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 1;
+}
+.image-box2 {
+  grid-column: 7 / span 6;
+  grid-row: 1 / span 1;
+}
+.image-box3 {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+}
+.image-box4 {
+  grid-column: 5 / span 5;
+  grid-row: 2 / span 1;
+}
+.image-box5 {
+  grid-column: 10 / span 3;
+  grid-row: 2 / span 1;
+}
+.image-box6 {
+  grid-column: 1 / span 5;
+  grid-row: 3 / span 1;
+}
+.image-box7 {
+  grid-column: 6 / span 7;
+  grid-row: 3 / span 1;
+}
 
 /* responsive website by media query: mobile devices */
 @media screen and (max-width: 600px) {
@@ -177,5 +248,12 @@ ul {
   .popular-travel-text p,
   ul {
     font-size: 14px;
+  }
+  .destinations-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .destinations-gallery div img {
+    height: 286px;
   }
 }
