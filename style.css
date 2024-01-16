@@ -8,6 +8,9 @@ body {
   max-width: 1170px;
   margin: 20px auto;
 }
+header {
+  padding: 0 5px;
+}
 /* primary color and button style */
 :root {
   --primary: #ff5400;
@@ -53,6 +56,13 @@ ul li {
 
 /* responsive website by media query: mobile devices */
 @media screen and (max-width: 600px) {
+  header {
+    padding: 0 2px;
+  }
+  .logo h1 {
+    font-size: 26px;
+    font-weight: 800;
+  }
   .hamburger {
     display: block;
   }
