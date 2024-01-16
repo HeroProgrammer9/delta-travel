@@ -310,4 +310,7 @@ ul {
   .destinations-gallery div img {
     height: 286px;
   }
+  .speciality-text {
+    width: 100%;
+  }
 }
