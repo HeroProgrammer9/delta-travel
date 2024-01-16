@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
   max-width: 1170px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 }
 header {
   padding: 0 15px;
@@ -57,7 +57,6 @@ nav ul li {
 .hamburger {
   display: none;
 }
-
 .main-banner {
   margin: 17px auto;
   padding: 106px 200px;
@@ -154,21 +153,18 @@ ul {
 .destinations-gallery img {
   width: 100%;
 }
-
 .destinations-gallery div {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
 }
-
 .destinations-gallery div h2 {
   position: absolute;
   color: #fff;
   font-size: 28px;
   font-weight: 800;
 }
-
 .image-box1 {
   grid-column: 1 / span 6;
   grid-row: 1 / span 1;
@@ -306,10 +302,41 @@ ul {
   font-size: 32px;
   font-weight: 800;
 }
-
 .news-letter img {
   width: 100%;
 }
+footer {
+  background-color: rgba(19, 19, 24, 0.05);
+  padding: 110px 300px;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo img {
+  height: 100%;
+}
+.footer-logo h1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+footer p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  margin-top: 33px;
+}
+
 /* responsive website by media query: mobile devices */
 @media screen and (max-width: 600px) {
   header {
@@ -394,5 +421,11 @@ ul {
   }
   .discount-card h1 {
     font-size: 21px;
+  }
+  footer {
+    padding: 44px 76px;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
